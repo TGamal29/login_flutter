@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -31,24 +29,26 @@ class LoginScreen extends StatelessWidget {
               style: TextStyle(color: Colors.grey, fontSize: 16),
             ),
           ),
-
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xff2f4eff),
-            padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 25)
-            ),
-            child:  const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 80,vertical: 10),
-              child: Text(
-                'Login',
-                style: TextStyle(color: Colors.white70),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xff2f4eff),
+                  // padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                  minimumSize: Size.fromHeight(45)),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                child: Text(
+                  'Login',
+                  style: TextStyle(color: Colors.white70),
+                ),
               ),
             ),
-            
           ),
-           SizedBox(height: 40,),
-
+          const SizedBox(
+            height: 40,
+          ),
           TextButton(
               onPressed: () {},
               child: const Text(
